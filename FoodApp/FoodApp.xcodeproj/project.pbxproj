@@ -25,6 +25,7 @@
 		589A6FF62BCC20C20029742E /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 589A6FE32BCC20C20029742E /* Poppins-Thin.ttf */; };
 		589A6FF82BCC20C20029742E /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 589A6FE52BCC20C20029742E /* Poppins-Italic.ttf */; };
 		589A6FF92BCC20C20029742E /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 589A6FE62BCC20C20029742E /* Poppins-MediumItalic.ttf */; };
+		589A6FFC2BCC375F0029742E /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A6FFB2BCC375F0029742E /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		589A6FE32BCC20C20029742E /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		589A6FE52BCC20C20029742E /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		589A6FE62BCC20C20029742E /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		589A6FFB2BCC375F0029742E /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,17 +66,18 @@
 		585218E22BCB3EB50042CB74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				585218E32BCB3EE80042CB74 /* Fronts */,
+				589A6FFA2BCC371B0029742E /* Extensions */,
+				585218E32BCB3EE80042CB74 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		585218E32BCB3EE80042CB74 /* Fronts */ = {
+		585218E32BCB3EE80042CB74 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				589A6FD32BCC20C20029742E /* Poppins */,
 			);
-			path = Fronts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		586028922BC5AAFE00DDF19A = {
@@ -111,20 +114,28 @@
 		589A6FD32BCC20C20029742E /* Poppins */ = {
 			isa = PBXGroup;
 			children = (
-				589A6FD72BCC20C20029742E /* Poppins-BoldItalic.ttf */,
-				589A6FD82BCC20C20029742E /* Poppins-Light.ttf */,
-				589A6FD92BCC20C20029742E /* Poppins-Medium.ttf */,
-				589A6FDD2BCC20C20029742E /* Poppins-BlackItalic.ttf */,
-				589A6FDF2BCC20C20029742E /* Poppins-Regular.ttf */,
-				589A6FE02BCC20C20029742E /* Poppins-LightItalic.ttf */,
-				589A6FE12BCC20C20029742E /* Poppins-Bold.ttf */,
 				589A6FE22BCC20C20029742E /* Poppins-Black.ttf */,
-				589A6FE32BCC20C20029742E /* Poppins-Thin.ttf */,
+				589A6FDD2BCC20C20029742E /* Poppins-BlackItalic.ttf */,
+				589A6FE12BCC20C20029742E /* Poppins-Bold.ttf */,
+				589A6FD72BCC20C20029742E /* Poppins-BoldItalic.ttf */,
 				589A6FE52BCC20C20029742E /* Poppins-Italic.ttf */,
+				589A6FD82BCC20C20029742E /* Poppins-Light.ttf */,
+				589A6FE02BCC20C20029742E /* Poppins-LightItalic.ttf */,
+				589A6FD92BCC20C20029742E /* Poppins-Medium.ttf */,
 				589A6FE62BCC20C20029742E /* Poppins-MediumItalic.ttf */,
+				589A6FDF2BCC20C20029742E /* Poppins-Regular.ttf */,
+				589A6FE32BCC20C20029742E /* Poppins-Thin.ttf */,
 				589A6FDE2BCC20C20029742E /* OFL.txt */,
 			);
 			path = Poppins;
+			sourceTree = "<group>";
+		};
+		589A6FFA2BCC371B0029742E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				589A6FFB2BCC375F0029742E /* UIFont+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 				586028A32BC5AAFE00DDF19A /* ViewController.swift in Sources */,
 				586028A92BC5AAFE00DDF19A /* FoodApp.xcdatamodeld in Sources */,
 				5860289F2BC5AAFE00DDF19A /* AppDelegate.swift in Sources */,
+				589A6FFC2BCC375F0029742E /* UIFont+Extension.swift in Sources */,
 				586028A12BC5AAFE00DDF19A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
